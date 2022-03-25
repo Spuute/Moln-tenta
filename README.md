@@ -8,7 +8,7 @@ Länk till beskrivningen av uppgiften vi har fått att göra:
 
 ## Applikationen i molnet
 
-<a href="https://examcalculator2021.azurewebsites.net/">Min applikation i molnet</a>
+
 **Togs bort efter kursexamination**
 
 ## Kodstruktur
