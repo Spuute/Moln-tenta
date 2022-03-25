@@ -1,0 +1,26 @@
+﻿@page
+@model frontend.Pages.HistoryModel
+@{
+}
+
+<table class="table table-hover mt-5">
+  <thead>
+    <tr>
+      <th scope="col">Operator</th>
+      <th scope="col">First number</th>
+      <th scope="col">Second number</th>
+      <th scope="col">Sum</th>
+    </tr>
+  </thead>
+  <tbody>
+      @foreach (var calc in Model.Calculations)
+      {
+        <tr class="table-active">
+        <th scope="row">@calc.Operand</th>
+        <td>@calc.First</td>
+        <td>@calc.Second</td>
+        <td>@calc.Sum</td>
+        </tr>
+      }
+  </tbody>
+</table>

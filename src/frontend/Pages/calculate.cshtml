@@ -1,0 +1,38 @@
+﻿@page
+@model frontend.Pages.calculateModel
+@{
+}
+
+@if(!string.IsNullOrEmpty(Model.Message)){
+    <div class="alert alert-success text-center">@Model.Message</div>
+}
+
+<div class="row h-100 justify-content-center align-items-cente mt-4">
+    <form asp-page="calculate" method="post">
+        <div class="">
+        <div class="control-group form-group">
+            <div class="controls">
+                <label asp-for="Calculate.First">First number:</label>
+                <input asp-for="Calculate.First" class="form-control">
+            </div>
+        </div>
+        <div class="control-group form-group">
+            <div class="controls">
+                <label asp-for="Calculate.Second">Second number:</label>
+                <input asp-for="Calculate.Second" class="form-control">
+            </div>
+        </div>
+        </div>
+        <div class="control-group form-group">
+            <div class="controls">
+                <select name="operator">
+                    <option value="">Select a operator</option>
+                    <option value="1">Addition</option>
+                    <option value="2">Subtraction</option>
+                </select>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Calculate</button>
+    </form>
+</div>
+
